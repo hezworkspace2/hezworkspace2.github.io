@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hezron Saycon — Executive Virtual Assistant</title>
 <meta name="description" content="Hezron Saycon, Executive Virtual Assistant. Administrative support, sales development, and content creation for growing businesses.">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hezron Saycon — Executive Virtual Assistant">
+<meta property="og:description" content="Administrative support, sales development, and content creation for growing businesses.">
+<meta property="og:image" content="https://hezworkspace2.github.io/og-image.png">
+<meta property="og:url" content="https://hezworkspace2.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hezron Saycon — Executive Virtual Assistant">
+<meta name="twitter:description" content="Administrative support, sales development, and content creation for growing businesses.">
+<meta name="twitter:image" content="https://hezworkspace2.github.io/og-image.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -274,6 +286,25 @@
     color: var(--ink);
   }
 
+  /* ---------- SETUP VIDEO ---------- */
+
+  .video-frame{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+
+  .video-frame iframe{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+
   /* ---------- EXPERIENCE / AGENDA ---------- */
 
   .agenda{
@@ -474,8 +505,9 @@
   <div class="wrap">
     <div class="logo">HEZRON SAYCON</div>
     <nav>
-      <a href="#work">Experience</a>
       <a href="#skills">What I do</a>
+      <a href="#setup">Setup</a>
+      <a href="#work">Experience</a>
       <a href="#background">Background</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -554,11 +586,24 @@
   </div>
 </section>
 
+<section id="setup">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The setup</h2>
+      <span class="section-num">02 / workspace</span>
+    </div>
+    <p style="color: var(--ink-soft); max-width: 560px; margin-bottom: 32px; font-size: 15px;">A quick look at the desk, tools, and connection I work from — for clients who want to know exactly what they're getting before day one.</p>
+    <div class="video-frame">
+      <iframe src="https://drive.google.com/file/d/13L7Wy3lU9n2AkdXnL9Zlqe7I2mXlWFXv/preview" allow="autoplay" allowfullscreen loading="lazy" title="Hezron Saycon's workspace setup"></iframe>
+    </div>
+  </div>
+</section>
+
 <section id="work">
   <div class="wrap">
     <div class="section-head">
       <h2>Experience</h2>
-      <span class="section-num">02 / work history</span>
+      <span class="section-num">03 / work history</span>
     </div>
     <div class="agenda">
 
@@ -671,7 +716,7 @@
   <div class="wrap">
     <div class="section-head">
       <h2>Background</h2>
-      <span class="section-num">03 / education &amp; recognition</span>
+      <span class="section-num">04 / education &amp; recognition</span>
     </div>
     <div class="two-col">
       <div>
