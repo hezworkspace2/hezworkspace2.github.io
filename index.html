@@ -288,6 +288,27 @@
 
   /* ---------- SETUP VIDEO ---------- */
 
+  /* ---------- SETUP VIDEOS ---------- */
+
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  @media (max-width: 700px){
+    .video-grid{ grid-template-columns: 1fr; }
+  }
+
+  .video-label{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
   .video-frame{
     position: relative;
     width: 100%;
@@ -304,6 +325,69 @@
     width: 100%; height: 100%;
     border: 0;
   }
+
+  /* ---------- RELIABILITY / SPECS ---------- */
+
+  .spec-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 780px){
+    .spec-grid{ grid-template-columns: 1fr; }
+  }
+
+  .spec-card{
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+
+  .spec-card h4{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 16.5px;
+    margin-bottom: 10px;
+  }
+
+  .spec-detail{
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+  }
+
+  .spec-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .spec-list li{
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .spec-list li::before{
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--line);
+  }
+
+  .spec-link{
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+  }
+
+  .spec-link:hover{ opacity: 0.75; }
 
   /* ---------- EXPERIENCE / AGENDA ---------- */
 
@@ -521,7 +605,8 @@
     <p class="hero-sub">Executive Virtual Assistant with 8+ years managing inboxes, pipelines, and content for founders and sales teams — so nothing falls through the cracks while you focus on what actually grows the business.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="https://calendly.com/hezworkspace/30min" target="_blank" rel="noopener">Book a 30-min call</a>
-      <a class="btn btn-ghost" href="https://hezsaycon.my.canva.site/hez-portfolio" target="_blank" rel="noopener">View portfolio ↗</a>
+      <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1_Ej2rjofh4M7BWO3Fu-U381nQClvNryJ?usp=drive_link" target="_blank" rel="noopener">Sample projects 1 ↗</a>
+      <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1d11HTaR82idQUpALbjMR4nzkEkG9jNX9?usp=drive_link" target="_blank" rel="noopener">Sample projects 2 ↗</a>
     </div>
     <div class="hero-meta">
       <div><strong>8+ yrs</strong>across admin, sales & content</div>
@@ -538,6 +623,15 @@
       <span class="section-num">01 / support areas</span>
     </div>
     <div class="skill-groups">
+      <div class="skill-group">
+        <h3>AI &amp; Automation</h3>
+        <div class="tag-row">
+          <span class="tag">AI-assisted prospecting</span>
+          <span class="tag">Automated sequencing tools</span>
+          <span class="tag">AI-powered content tools</span>
+          <span class="tag">ML data annotation</span>
+        </div>
+      </div>
       <div class="skill-group">
         <h3>Executive &amp; Admin</h3>
         <div class="tag-row">
@@ -582,16 +676,6 @@
           <span class="tag">Benefits management</span>
         </div>
       </div>
-      <div class="skill-group">
-        <h3>Automations &amp; AI</h3>
-        <div class="tag-row">
-          <span class="tag">AI-assisted workflows</span>
-          <span class="tag">Prompt engineering</span>
-          <span class="tag">Zapier & Make</span>
-          <span class="tag">ChatGPT & Claude</span>
-          <span class="tag">Workflow Automation</span>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -599,12 +683,56 @@
 <section id="setup">
   <div class="wrap">
     <div class="section-head">
-      <h2>The setup</h2>
-      <span class="section-num">02 / workspace</span>
+      <h2>See it for yourself</h2>
+      <span class="section-num">02 / intro &amp; workspace</span>
     </div>
-    <p style="color: var(--ink-soft); max-width: 560px; margin-bottom: 32px; font-size: 15px;">A quick look at the desk, tools, and connection I work from — for clients who want to know exactly what they're getting before day one.</p>
-    <div class="video-frame">
-      <iframe src="https://drive.google.com/file/d/13L7Wy3lU9n2AkdXnL9Zlqe7I2mXlWFXv/preview" allow="autoplay" allowfullscreen loading="lazy" title="Hezron Saycon's workspace setup"></iframe>
+    <div class="video-grid">
+      <div>
+        <p class="video-label">Personal introduction</p>
+        <div class="video-frame">
+          <iframe src="https://www.loom.com/embed/89db44ae2dab4a9ab04f54b60da05bff" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Hezron Saycon's introduction"></iframe>
+        </div>
+      </div>
+      <div>
+        <p class="video-label">Workspace &amp; setup</p>
+        <div class="video-frame">
+          <iframe src="https://drive.google.com/file/d/13L7Wy3lU9n2AkdXnL9Zlqe7I2mXlWFXv/preview" allow="autoplay" allowfullscreen loading="lazy" title="Hezron Saycon's workspace setup"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="reliability">
+      <p class="video-label" style="margin-top: 48px;">Ensuring my service to you</p>
+      <div class="spec-grid">
+
+        <div class="spec-card">
+          <h4>Internet connection</h4>
+          <p class="spec-detail">Stable, tested connection with results verified on Speedtest.</p>
+          <a class="spec-link" href="https://www.speedtest.net/result/19388013104" target="_blank" rel="noopener">View live speed test result ↗</a>
+        </div>
+
+        <div class="spec-card">
+          <h4>Primary workstation</h4>
+          <ul class="spec-list">
+            <li>Intel Core i5, 7th Gen</li>
+            <li>16 GB RAM</li>
+            <li>GTX 1660 Super 6GB OC</li>
+            <li>4K camera</li>
+            <li>Condenser microphone</li>
+          </ul>
+        </div>
+
+        <div class="spec-card">
+          <h4>Backup device</h4>
+          <p class="spec-detail">A dedicated backup laptop stays on standby so client work is never interrupted by hardware issues.</p>
+          <ul class="spec-list">
+            <li>Huawei laptop</li>
+            <li>Intel Core i3, 11th Gen</li>
+            <li>8 GB RAM</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
